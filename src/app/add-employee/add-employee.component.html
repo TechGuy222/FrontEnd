@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+    <label>Name</label><br>
+    <input [(ngModel)]="addEmp.name" type="text" class="form-control " ><br><br>
+
+    <label>status</label><br>
+    <input [(ngModel)]="addEmp.status" type="text" class="form-control " ><br><br>
+
+    <label>department</label><br>
+    <input [(ngModel)]="addEmp.department" type="text" class="form-control " ><br><br>
+
+    <label>Mobile</label><br>
+    <input [(ngModel)]="addEmp.mobile" type="text" class="form-control " ><br><br>
+
+    <label>Email</label><br>
+    <input [(ngModel)]="addEmp.email" type="text" class="form-control " ><br><br>
+
+    <label>Salary</label><br>
+    <input [(ngModel)]="addEmp.salary" type="text" class="form-control"><br><br>
+
+   <label for="">Country</label>
+     <select [(ngModel)]="addEmp.country" class="form-control" name="" id="">
+        <option [ngValue]="item" *ngClass="let item of allCountry">{{item.cname}}</option>
+
+    </select><br><br>
+
+
+     <button (click)="onSubmit" class="btn btn-success">Submit</button>
+</div>
+
+
+
